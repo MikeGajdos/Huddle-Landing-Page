@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Hero, Footer, Features, CTA } from "./components/sections";
+import GlobalStyles from "./styles/GlobalStyles";
+import content from "./content";
+import Feature from "./components/feature/Feature";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <Hero />
+      <Features>
+        {content.map((item, index) => (
+          <Feature key={index} item={item} />
+        ))}
+      </Features>
+      <CTA />
+      <Footer />
+    </>
   );
 }
 
