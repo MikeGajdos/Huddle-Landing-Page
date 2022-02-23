@@ -5,5 +5,5 @@ export const StyledFeatures = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8.5rem;
+  gap: 10.5rem;
 `;

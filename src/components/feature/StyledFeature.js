@@ -17,6 +17,11 @@ export const StyledFeature = styled.article`
 
   img {
     width: 75%;
+    max-width: 80rem;
+    opacity: 0;
+    visibility: 0;
+    transform: scale(0);
+    transition: all 2s ease-in-out;
   }
 
   .feature__heading {
@@ -35,5 +40,16 @@ export const StyledFeature = styled.article`
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+  }
+
+  .feature__image.fadeIn img {
+    visibility: 1;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .feature__body.fadeIn {
+    background: red;
   }
 `;
