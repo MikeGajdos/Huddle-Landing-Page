@@ -5,6 +5,7 @@ export const StyledHero = styled.div`
   background: url("/images/bg-hero.svg"), rgb(237, 251, 254);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
   @media only screen and (max-width: 500px) {
     padding: 4rem;

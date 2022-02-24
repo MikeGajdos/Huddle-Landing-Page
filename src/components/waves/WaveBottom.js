@@ -1,12 +1,12 @@
 import React from "react";
 
-const CTAWaveBottom = () => {
+const WaveBottom = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
       preserveAspectRatio="none"
-      className="cta__wave-bottom"
+      className="cta__wave-bottom waveAnimation2"
     >
       <path
         fill="hsl(192, 100%, 9%)"
@@ -17,4 +17,4 @@ const CTAWaveBottom = () => {
   );
 };
 
-export default CTAWaveBottom;
+export default WaveBottom;

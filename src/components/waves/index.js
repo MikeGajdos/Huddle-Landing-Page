@@ -1,1 +1,2 @@
-export { default as CTAWaveBottom } from "./CTAWaveBottom";
+export { default as WaveBottom } from "./WaveBottom";
+export { default as WaveTop } from "./WaveTop";

@@ -2,6 +2,10 @@ import { createGlobalStyle, css, keyframes } from "styled-components";
 import { variables } from "./Variables";
 import { animations } from "./Animations";
 
+// hsl(196, 93%, 95%)
+// #F0F7FF
+// #EDFBFD
+
 const GlobalStyles = createGlobalStyle`
 ${variables}
 html {
@@ -44,12 +48,6 @@ svg {
     }
 }
 
-
-
-
-
-
-
 .hero__body__headline {
     font-size: clamp(3.25rem , 3vw, 7rem);
     margin-bottom: 4rem;
@@ -61,6 +59,54 @@ svg {
 .attribution {
     text-align: center;
   }
+
+.hero .cta__wave-bottom  {
+    width: 400vw;
+    height: 20rem;
+    position: absolute;
+    bottom: 0;
+    @media(max-width: 700px){
+        height: 5rem;
+    }
+}
+
+.hero .cta__wave-bottom path {
+    fill: #F0F7FF;
+}
+
+
+.odd .cta__wave-bottom {
+    width: 400vw;
+    height: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @media(max-width: 700px){
+        height: 10rem;
+    }
+}
+
+.odd .cta__wave-bottom path {
+    fill: white;
+}
+
+.even .cta__wave-bottom {
+    width: 400vw;
+    height: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @media(max-width: 700px){
+        height: 10rem;
+    }
+}
+
+.even .cta__wave-bottom path {
+    fill: #F0F7FF;
+}
+
+
+
 
 
 ${animations}

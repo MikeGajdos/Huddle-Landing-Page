@@ -26,6 +26,7 @@ export const StyledHeroContent = styled.section`
     display: flex;
     align-items: center;
     width: 55%;
+    overflow: hidden;
 
     @media only screen and (min-width: 1800px) {
       justify-content: center;

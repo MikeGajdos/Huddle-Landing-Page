@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const StyledFeature = styled.article`
+  position: relative;
   display: flex;
   flex-direction: ${({ layout }) => layout || "row"};
   align-items: center;
-  width: 75%;
+  padding: 8vw 10vw;
+  background: ${({ bg }) => bg || "#F0F7FF"};
 
   @media (max-width: 600px) {
     flex-direction: column-reverse;
